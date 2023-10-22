@@ -1,5 +1,8 @@
 import { defineConfig } from 'astro/config';
+import storyblok from '@storyblok/astro'
+import { loadEnv } from 'vite'
 import basicSsl from '@vitejs/plugin-basic-ssl'
+const env = loadEnv("", process.cwd(), 'STORYBLOK')
 
 
 // https://astro.build/config
